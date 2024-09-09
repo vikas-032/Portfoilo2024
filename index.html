@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <title>PortfolioBy-Vikas</title>
+    <title>PortfolioBy</title>
 </head>
 
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Vikas Kumar</div>
+        <div class="logo">Tony Stark</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -23,7 +26,7 @@
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo">Vikas Kumar</div>
+        <div class="logo">Tony Stark</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -43,14 +46,14 @@
 
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+            <img src="assets/about-pic.png" alt="about-img">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Vikas Kumar</h1>
+            <h1 class="title">Tony Stark</h1>
             <p class="section__text__p2">Frontend Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/assets/vikas-cv_.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('./assets/vikas-cv_.pdf')">
                     Download CV
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -58,10 +61,12 @@
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-                    onclick="location.href='https://linkedin.com/'" />
-                <img src="./assets/github.png" alt="My Github profile" class="icon"
-                    onclick="location.href='https://github.com/'" />
+                <!-- <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://linkedin.com/'" /> -->
+                <i class="fa-brands fa-github icons"></i>
+                <i class="fa-brands fa-linkedin icons"></i>
+                <!-- <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/'" /> -->
             </div>
         </div>
     </section>
@@ -77,12 +82,14 @@
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <!-- <img src="./assets/experience.png" alt="Experience icon" class="icon" /> -->
+                        <i class="fa-solid fa-graduation-cap"></i>
                         <h3>Experience</h3>
                         <p>Entery Level<br />Frontend Development</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <!-- <img src="./assets/education.png" alt="Education icon" class="icon" /> -->
+                        <i class="fa-solid fa-medal"></i>
                         <h3>Education</h3>
                         <p>Bachelors Degree in Computer Application(B.C.A)</p>
                     </div>
@@ -99,7 +106,8 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" /> -->
+        <i class="fa-solid fa-angles-down icons arrow"></i>
     </section>
 
 
@@ -114,42 +122,48 @@
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+                            <i class="fa-solid fa-circle-check"></i>
                             <div>
                                 <h3>HTML</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+                            <i class="fa-solid fa-circle-check"></i>
                             <div>
                                 <h3>CSS</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+                            <i class="fa-solid fa-circle-check"></i>
                             <div>
                                 <h3>SASS</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+                            <i class="fa-solid fa-circle-check"></i>
                             <div>
                                 <h3>JavaScript</h3>
                                 <p>Basic</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+                            <i class="fa-solid fa-circle-check"></i>
                             <div>
                                 <h3>TypeScript</h3>
                                 <p>Basic</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+                            <i class="fa-solid fa-circle-check"></i>
                             <div>
                                 <h3>Material UI</h3>
                                 <p>Intermediate</p>
@@ -161,28 +175,32 @@
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+                            <i class="fa-solid fa-circle-check"></i>
                             <div>
                                 <h3>PostgreSQL</h3>
                                 <p>Basic</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+                            <i class="fa-solid fa-circle-check"></i>
                             <div>
                                 <h3>Node JS</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+                            <i class="fa-solid fa-circle-check"></i>
                             <div>
                                 <h3>Express JS</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+                            <i class="fa-solid fa-circle-check"></i>
                             <div>
                                 <h3>Git</h3>
                                 <p>Intermediate</p>
@@ -192,7 +210,8 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" /> -->
+        <i class="fa-solid fa-angles-down icons arrow"></i>
     </section>
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
@@ -205,10 +224,12 @@
                     </div>
                     <h2 class="experience-sub-title project-title">Project One</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/vikas-032'">
                             Github
                         </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/vikas-032'">
                             Live Demo
                         </button>
                     </div>
@@ -219,10 +240,12 @@
                     </div>
                     <h2 class="experience-sub-title project-title">Project Two</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/vikas-032'">
                             Github
                         </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/vikas-032'">
                             Live Demo
                         </button>
                     </div>
@@ -233,29 +256,34 @@
                     </div>
                     <h2 class="experience-sub-title project-title">Project Three</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/vikas-032'">
                             Github
                         </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/vikas-032'">
                             Live Demo
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" /> -->
+        <i class="fa-solid fa-angles-down icons arrow"></i>
     </section>
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:examplemail@gmail.com">7014.vikas@gmail.com</a></p>
+                <!-- <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" /> -->
+                <i class="fa-solid fa-envelope icons"></i>
+                <p><a href="https://mail.google.com/mail/u/0/#inbox">7014xxx@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+                <!-- <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" /> -->
+                <i class="fa-solid fa-envelope icons"></i>
+                <p><a href="https://www.linkedin.com/in/vikas-kumar-b40537285/">LinkedIn</a></p>
             </div>
         </div>
     </section>
@@ -270,7 +298,7 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2023 Vikas Kumar. All Rights Reserved.</p>
+        <p>Copyright &#169; 2023 xxx Kumar. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
 

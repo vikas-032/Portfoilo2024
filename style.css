@@ -9,6 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 html {
@@ -36,17 +38,19 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 10vh;
+  background-color: rgba(17, 17, 17, 0.873);
+  box-shadow: 0 0 10px rgb( 132, 32, 214 );
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -60,6 +64,8 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .logo:hover {
@@ -109,7 +115,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: white;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -167,6 +173,15 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+ 
+  color: white;
+}
+#profile img{
+  border: 2px solid black;
+  border-radius: 50%;
+
+
+
 }
 
 .section__pic-container {
@@ -174,6 +189,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  
 }
 
 .section__text {
@@ -186,7 +202,8 @@ section {
 }
 
 .section__text__p1 {
-  text-align: center;
+  text-align: center; 
+  color: aliceblue;
 }
 
 .section__text__p2 {
@@ -200,17 +217,28 @@ section {
 }
 
 #socials-container {
+ 
+ color: white;
   display: flex;
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+  
+
 }
 
 /* ICONS */
 
+.icons {
+  cursor: pointer;
+ font-size: 30px;
+ color: white
+}
+
 .icon {
   cursor: pointer;
   height: 2rem;
+ color: blueviolet
 }
 
 /* BUTTONS */
@@ -227,37 +255,46 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  border: rgba(132, 32, 214, 0.873) 0.1rem solid; 
+  background-color: black;
+  color: white;
+ 
+}
+.btn:hover{
+  background-color:rgb(132, 32, 214,0.87 );
 }
 
-.btn-color-1,
+/* .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-}
+   border: rgba(132, 32, 214, 0.873) 0.1rem solid; 
+  background-color:rgba(132, 32, 214, 0.873);
+  color: white;
+} */
 
-.btn-color-1:hover,
+/* .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
-}
+} */
 
-.btn-color-1,
+/* .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
-}
-
-.btn-color-1:hover {
   background: rgb(0, 0, 0);
-}
+  color: white;
+} */
 
-.btn-color-2 {
-  background: none;
-}
+/* .btn-color-1:hover {
+  background: rgb(0, 0, 0);
+} */
 
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
+
+
+/* .btn-color-2:hover {
+  border: rgb(255, 254, 254) 0.1rem solid;
+
+} */
 
 .btn-container {
+
   gap: 1rem;
 }
 
@@ -265,7 +302,15 @@ section {
 
 #about {
   position: relative;
+  border-top: 1px solid rgb(39, 39, 39);
+  
 }
+
+#about h1{ 
+  color: white; 
+  font-size: 4rem;
+}
+
 
 .about-containers {
   gap: 2rem;
@@ -273,6 +318,9 @@ section {
   margin-top: 2rem;
 }
 
+ #about .text-container p{
+  color: rgb(94, 93, 93);
+}
 .about-details-container {
   justify-content: center;
   flex-direction: column;
@@ -291,17 +339,31 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  color: gray;
+  
 }
 
-.details-container {
+#about .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+   
+  
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  background-color: rgba(17, 17, 17, 0.873);
+  box-shadow: 0 0 7px rgb( 132, 32, 214 );
+ color: rgb( 132, 32, 214 );
   text-align: center;
+  transition: all 2s ease;
 }
+.details-container p{
+  color: white;
+  font-size: 1rem;
+}
+.details-container i{
+  font-size: 30px;
+  color: white;
+}
+
 
 .section-container {
   gap: 4rem;
@@ -317,7 +379,11 @@ section {
 /* EXPERIENCE SECTION */
 
 #experience {
-  position: relative;
+  position: relative;  
+  /* border-top: 1px solid rgb(39, 39, 39); */
+}
+#experience h1{
+  color: rgb( 132, 32, 214 );
 }
 
 .experience-sub-title {
@@ -333,6 +399,27 @@ section {
   flex-direction: column;
 }
 
+#experience .details-container
+{
+  padding: 1.5rem;
+  flex: 1;
+   border: 2px solid rgb(17, 17, 17);
+   background-color: rgba(17, 17, 17, 0.873);
+
+  border-radius: 2rem;
+ 
+ 
+  text-align: center;
+  color: black;
+  transition: all 2s ease;
+
+
+}
+#experience .details-container i
+{
+  color: white;
+  font-size: 25px;
+}
 .article-container {
   display: flex;
   text-align: initial;
@@ -342,11 +429,21 @@ section {
   justify-content: space-around;
 }
 
+
 article {
   display: flex;
   width: 10rem;
   justify-content: space-around;
   gap: 0.5rem;
+
+}
+article div h3{
+  color: white;
+
+}
+#experience article div p{
+  color:gray;
+
 }
 
 article .icon {
@@ -357,12 +454,13 @@ article .icon {
 
 #projects {
   position: relative;
+  border-top: 1px solid rgb(76, 75, 75);
 }
 
-.color-container {
+/* .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
-}
+} */
 
 .project-img {
   border-radius: 2rem;
@@ -374,10 +472,20 @@ article .icon {
   margin: 1rem;
   color: black;
 }
-
+/* 
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+} */
+#projects button{
+  background-color: black;
+  color: white;
+  
+  font-size: 15px;
+  border: 2px solid white;
+}
+#projects .details-container{
+
 }
 
 /* CONTACT */
@@ -386,7 +494,12 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 60vh;
+  border-radius: 2rem;
+  margin-bottom: 20vmin;
+  background-color: rgba(17, 17, 17, 0.873);
+  box-shadow: 0 0 10px gray;
+ 
 }
 
 .contact-info-upper-container {
@@ -410,21 +523,33 @@ article .icon {
 
 .contact-info-container p {
   font-size: larger;
+  
+}
+.contact-info-container p a{
+  color: gray;
+
+  text-decoration: none;
+  
 }
 
-.contact-icon {
+/* .contact-icon {
   cursor: default;
 }
 
 .email-icon {
   height: 2.5rem;
-}
+} */
 
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  height: 16vh;
+  margin: 0 1rem; border-top: 2px solid rgb( 132, 32, 214 );
+ 
+}
+footer nav{
+  background-color: black;
+  box-shadow: 0 0 0 black;
 }
 
 footer p {
